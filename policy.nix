@@ -102,6 +102,9 @@ in {
       # Trim https:// from the url bar
       "browser.urlbar.trimHttps" = locked true;
 
+      # Hide "More from Mozilla" in settings
+      "browser.preferences.moreFromMozilla" = locked false;
+
       ### SECURITY/PRIVACY ###
     
       "browser.contentblocking.category" = locked "strict";
@@ -121,6 +124,9 @@ in {
       # Display advanced information on Insecure Connection warning pages
       # [TEST] https://expired.badssl.com/
       "browser.xul.error_pages.expert_bad_cert" = locked true;
+
+      # Disable crash reports
+      "browser.tabs.crashReporting.sendReport" = locked false;
 
       ### ANNOYING WEB APIs ###
 
