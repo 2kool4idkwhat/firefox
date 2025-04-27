@@ -105,6 +105,13 @@ in {
       # Hide "More from Mozilla" in settings
       "browser.preferences.moreFromMozilla" = locked false;
 
+      # No distractions while typing in the url bar
+      "browser.urlbar.suggest.engines" = false;
+      "browser.urlbar.suggest.history" = false;
+      "browser.urlbar.suggest.recentsearches" = false;
+      "browser.urlbar.suggest.bookmark" = false;
+      "browser.urlbar.suggest.topsites" = false; # "Shortcuts" - includes facebook, twitter, etc.
+
       ### SECURITY/PRIVACY ###
     
       "browser.contentblocking.category" = locked "strict";
