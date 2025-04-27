@@ -112,6 +112,12 @@ in {
       "browser.urlbar.suggest.bookmark" = false;
       "browser.urlbar.suggest.topsites" = false; # "Shortcuts" - includes facebook, twitter, etc.
 
+      ### TELEMETRY (shouldn't be needed because of DisableTelemetry policy, but it doesn't hurt to still set these) ###
+
+      # Firefox Home (Activity Stream)
+      "browser.newtabpage.activity-stream.telemetry" = locked false;
+      "browser.newtabpage.activity-stream.feeds.telemetry" = locked false;
+
       ### SECURITY/PRIVACY ###
     
       "browser.contentblocking.category" = locked "strict";
