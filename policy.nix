@@ -57,6 +57,8 @@ in {
     # "Disable the menus for reporting sites (Submit Feedback, Report Deceptive Site)."
     DisableFeedbackCommands = true;
 
+    DisableFirefoxAccounts = true;
+
     ExtensionSettings = {
       "uBlock0@raymondhill.net" = {
         install_url = "https://addons.mozilla.org/firefox/downloads/latest/ublock-origin/latest.xpi";
