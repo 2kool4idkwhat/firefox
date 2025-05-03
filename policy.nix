@@ -96,8 +96,8 @@ in {
       # Don't show a warning when opening about:config
       "browser.aboutConfig.showWarning" = locked false;
 
-      # Use rounded bottom window corners on Linux
-      "widget.gtk.rounded-bottom-corners.enabled" = locked true;
+      # Use rounded bottom window corners on Linux. Broken as of v138
+      # "widget.gtk.rounded-bottom-corners.enabled" = locked true;
 
       # Trim https:// from the url bar
       "browser.urlbar.trimHttps" = locked true;
@@ -140,6 +140,11 @@ in {
 
       # Disable crash reports
       "browser.tabs.crashReporting.sendReport" = locked false;
+
+      # Disable UITour so there's no chance that a remote page can use it in case
+      # of a vulnerability like CVE-2025-4085
+      "browser.uitour.enabled" = locked false;
+      "browser.uitour.url" = locked "";
 
       ### ANNOYING WEB APIs ###
 
