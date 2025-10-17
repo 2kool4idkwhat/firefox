@@ -7,6 +7,15 @@ in {
     DisableTelemetry = true;
     DisableFirefoxStudies = true;
 
+    ### AI ###
+    GenerativeAI = {
+      Chatbot = false;
+      LinkPreviews = false;
+      TabGroups = false;
+
+      Locked = true;
+    };
+
     ### OTHER MOZILLA CRAP ###
     DisablePocket = true;
 
